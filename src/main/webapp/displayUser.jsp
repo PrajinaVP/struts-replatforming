@@ -14,6 +14,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 -->
+<%@ taglib prefix="s" uri="/struts-tags" %>
 <title>User Details</title>
 
 <h2>User Details </h2>
@@ -21,13 +22,19 @@ limitations under the License.
     <tr>
         <td><b>ID</b></td>
         <td>${user.id }</td>
+           <tr>
+               <td><b>ID</b></td>
+               <td><s:property value="user.id"/></td>
+           </tr>
     </tr>
     <tr>
         <td><b>First Name</b></td>
+         <td><s:property value="user.firstName"/></td>
         <td>${user.firstName }</td>
     </tr>
     <tr>
         <td><b>Last Name</b></td>
+         <td><s:property value="user.lastName"/></td>
         <td>${user.lastName }</td>
     </tr>
 </table>
